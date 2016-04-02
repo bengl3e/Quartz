@@ -1,0 +1,114 @@
+<html>	
+	<head>
+		<div class="head" style='position: relative; background: url(http://localhost/411/Quartz/pics/Header.jpg);
+		width: 945px; height: 120px; align="center"'>
+	</head>
+	<body>
+		<link rel="stylesheet" type="text/css" href="MyManageStyle.css">
+		<fieldset>
+
+					<font size="6"> Website Management Panel</font><br>
+					</hr>
+					<hr>
+					<font size="4"> Welcome</font>
+					<hr>
+
+					<form id="web_settings">
+						<b> Web Settings:</b><br>
+							<input type="radio" name="setting" value="online">Online<br>
+							<input type="radio" name="setting" value="offline">Offline<br>
+							<input type="submit" name="submit" value="Save">
+					</form>
+					<hr>
+					<b>Picture:</b><br>
+					<form action="upload_file.php" method="post" id="picture" enctype="multipart/form-data">
+						<label for="file">Picture:</label>
+						<input type="file" onchange="readURL(this);" name="file" id="file"><br>
+						<input type="submit" name="submit" value="Save">
+						<img id="prof_pic" src=<?php
+												$picGetter = new MyManageDataStub();
+												print($picGetter->getPhotoDest());
+												?>
+											alt="your image" width="150" height="200"/>
+					</form>
+					<hr>
+					<form id="gen_settings">
+						<b>General Information: </b><br>
+						<br>
+							Display Name: <input type="text" id="dname">
+						<br>
+							Job Title: <input type="text" id="jtitle">
+						<br>
+							Office Address <input type="text" id="address">
+						<br>
+							Telephone: <input type="text" id="telephone">
+						<br>
+							Fax: <input type="text" id="fax">
+						<br>
+							Email: <input type="text" id="email">
+						<br>
+							Office Hours: <input type="text" id="office_hours">
+						<br>
+							Short Bio: <textarea rows="4" cols="50" id="bio"></textarea>
+						<br>
+						<input type="submit" name="submit" value="Save">
+					</form>
+					<hr>
+					<form id="teaching">
+						<b>Teaching</b><br>
+						Add new course:<br>
+						Course Name: <input type="text" id="c_name">
+						Course Description: <input type="text" id="c_description">
+						Link To Course Page: <input type="text" id="c_link">
+						<input type="submit" name="submit" value="Add Course">
+					</form>
+						<div class="container" id="c_list">
+							<input type="checkbox" id="c_1"/>First Course<br>
+							<input type="checkbox" id="c_2"/>Second Course<br>
+						</div>
+						<button>Delete Selected</button>
+					<hr>
+						<form id="research">
+						<b>Research</b><br>
+						Research Summary: <br>
+						Tip: Use HTML tags for better formatting<br>
+						<textarea rows="4" cols="50" id="research"></textarea>
+						<input type="submit" name="submit" value="Save">
+					</form>
+					<hr>
+					<form id="awards">
+						<b>Awards:</b><br>
+						Tip: Use HTML tags for better formatting<br>
+						<textarea rows="4" cols="50" id="awards"></textarea>
+						<input type="submit" name="submit" value="Save">
+					</form>
+					<hr>
+					<form id="projects">
+						<b>Projects:</b><br>
+						Tip: Use HTML tags for better formatting<br>
+						<textarea rows="4" cols="50" id="projects"></textarea>
+						<input type="submit" name="submit" value="Save">
+					</form>
+					<hr>
+					<form id="Students">
+						<b>Students:</b><br>
+						Tip: Use HTML tags for better formatting<br>
+						<textarea rows="4" cols="50" id="students"></textarea>
+						<input type="submit" name="submit" value="Save">
+					</form>
+					<hr>
+					<form id="personal">
+						<b>Personal:</b><br>
+						Tip: Use HTML tags for better formatting<br>
+						<textarea rows="4" cols="50" id="personal"></textarea>
+						<input type="submit" name="submit" value="Save">
+					</form>
+					<hr>
+					<button>Visit Web Page</button><button>Save All</button><button>Upload All</button>
+					</fieldset>
+						<footer>
+		 		<p> Copyright 2014 Boston University Department of Computer Science</br>
+		 		All Rights Reserved.</p> 
+				</footer>
+		</body>
+</html>

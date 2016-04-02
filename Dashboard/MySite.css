@@ -1,0 +1,143 @@
+#navbar {
+	border: 1px solid red;
+	font-family: Arial;
+	background-color:#CF2123;
+	height: 700px;
+	width:205px;
+	padding: 0 1em;
+	position:absolute;
+	margin-top:120px;
+
+}
+.h {
+	color:white;
+}
+.t {
+	color:white;
+}
+.a {
+	color:white;
+}
+.r {
+	color:white;
+}
+.p {
+	color:white;
+}
+
+#home{
+	color: white;
+	border: 1px solid white;
+	padding: 0 1em;
+	width: 170px;
+	padding-top:5px;
+	padding-bottom:5px;
+
+}
+
+#teaching{
+	color: white;
+	border: 1px solid white;
+	padding: 0 1em;
+	width: 170px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+#research{
+	color: white;
+	border: 1px solid white;
+	padding: 0 1em;
+	width: 170px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#awards{
+	color: white;
+	border: 1px solid white;
+	padding: 0 1em;
+	width: 170px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#personal{
+	color: white;
+	border: 1px solid white;
+	padding: 0 1em;
+	width: 170px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.line-separator{
+height:1px;
+position:relative;
+background:#717171;
+display: block;
+border-top:1px solid #313030;
+width: 400px;
+top: -150px;
+left: 240px;
+}
+
+.info {
+	position: absolute;
+	left: 280px;
+	margin-top:200px;
+	font-family: Arial;
+}
+
+#contact{
+	position:relative;
+	top:40px;
+}
+
+#subtitle {
+	font-weight:bold;
+}
+
+#office {
+	position:relative;
+	top: 50px;
+}
+#bio {
+	position:relative;
+	top:60px;
+}
+.head {
+	
+}
+.pic {
+	position:absolute;
+    left: 390px;
+    top: -70px;
+}
+.Heading {
+	top: -520px;
+	
+
+}
+#Ho {
+	position:relative;
+	top:-300px;
+	font-size:27px;
+	font-weight:bold;
+
+}
+#Name {
+	position:relative;
+	top:-290px;
+	font-size:16px;	
+	font-style: italic;
+}
+
+#award2 {
+	position:relative;
+	font-size:27px;
+	font-weight:bold;
+	top:-40px;
+}
+.info2 {
+	position:relative;
+
+}

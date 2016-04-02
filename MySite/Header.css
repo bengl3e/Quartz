@@ -1,0 +1,12 @@
+DIV.toplink {
+    position: absolute;
+    text-align:right;
+    font-family:Tahoma;
+    font-size: 11px;
+    background-color: #434542;
+    top: 1em;
+    right:3em;
+    
+    /*width: 120px;*/
+    padding: 4px;
+}

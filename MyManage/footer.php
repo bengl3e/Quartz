@@ -1,0 +1,1 @@
+<center><div style="position: relative; float:left; <?php if (strstr($_SERVER['HTTP_USER_AGENT'],"Mozilla, Google Chrome")) echo 'top:0px;'; ?>	background: url(<?php print("images/Footer.jpg"); ?>); width: 945px; height: 100px;"></div></center>

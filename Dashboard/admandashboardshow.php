@@ -1,0 +1,68 @@
+<?php
+echo "<!DOCTYPE html>\n"; 
+echo "<html>\n"; 
+echo "<head>\n"; 
+echo "<style>\n"; 
+echo "#users\n"; 
+echo "{\n"; 
+echo "font-family:\"Trebuchet MS\", Arial, Helvetica, sans-serif;\n"; 
+echo "width:100%;\n"; 
+echo "border-collapse:collapse;\n"; 
+echo "}\n"; 
+echo "#users td, #users th \n"; 
+echo "{\n"; 
+echo "font-size:1em;\n"; 
+echo "border:1px solid #98bf21;\n"; 
+echo "padding:3px 7px 2px 7px;\n"; 
+echo "}\n"; 
+echo "#users th \n"; 
+echo "{\n"; 
+echo "font-size:1.1em;\n"; 
+echo "text-align:left;\n"; 
+echo "padding-top:5px;\n"; 
+echo "padding-bottom:4px;\n"; 
+echo "background-color:#A7C942;\n"; 
+echo "color:#ffffff;\n"; 
+echo "}\n"; 
+echo "#users tr.alt td \n"; 
+echo "{\n"; 
+echo "color:#000000;\n"; 
+echo "background-color:#EAF2D3;\n"; 
+echo "}\n"; 
+echo "</style>\n"; 
+echo "</head>\n"; 
+echo "\n"; 
+echo "<body>\n"; 
+echo "<table id=\"users\">\n"; 
+echo "<tr>\n"; 
+echo "  <th>Email</th>\n"; 
+echo "  <th>Create</th>\n"; 
+echo "  <th>Activate</th>\n";
+echo "  <th>Version </th>\n";
+echo "  <th>Contact </th>\n";
+echo "</tr>\n"; 
+echo "<tr>\n"; 
+echo "<td>Alfreds Futterkiste@gmail</td>\n"; 
+echo "<td><button type=\"submit\" name=\"delete\" value=\"Submit\">Delete</button></td>\n"; 
+$res = $this->model->getActivationStatus($this->email);
+if ($res== true){
+echo "<td><button type=\"submit\" name=\"deact\" value=\"Submit\">Deactivate</button></td>\n";
+} else{
+echo "<td><button type=\"submit\" name=\"act\" value=\"Submit\">Activate</button></td>\n"; 
+}
+echo "<td>Germany</td>\n"; 
+echo "<td>Germany</td>\n"; 
+echo "<td>Germany</td>\n"; 
+echo "</tr>\n"; 
+echo "<tr class=\"alt\">\n"; 
+echo "<td>Berglunds snabbköp</td>\n"; 
+echo "<td>Christina Berglund</td>\n"; 
+echo "<td>Sweden</td>\n"; 
+echo "<td>Germany</td>\n"; 
+echo "<td>Germany</td>\n"; 
+echo "</tr>\n"; 
+echo "</table>\n"; 
+echo "</body>\n"; 
+echo "</html>\n"; 
+echo "\n";
+?>
